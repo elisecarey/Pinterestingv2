@@ -11,13 +11,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.3.5'
 
 group :development, :test do
-	gem 'sqlite3'
+     gem 'sqlite3'
 end
 
-group :production docgem 'pg'
-gem 'rails_12factor'
+group :production do
+     gem 'pg'
+     gem 'rails_12factor'
 end
 
-group :doc docgem 'sdoc', require: false
-end
 
